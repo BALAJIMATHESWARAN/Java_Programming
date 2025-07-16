@@ -7,14 +7,16 @@ public class SquareRoot {
         int res = -1;
         while(l <= r){
             int mid = l +(r-l) /2;
-            if(mid*mid <= num){
+            if((long)mid*mid == num){
                 res = mid;
+                break;
             }
-            if(mid*mid > num){
-                r = mid -1;
+            else if((long)mid*mid < num){
+                res = mid;
+                 l = mid +1;
             }
             else{
-                l = mid+1;
+                r = mid-1;
             }
         }
         System.out.println(res);
