@@ -1,11 +1,10 @@
-import java.nio.channels.SelectionKey;
 import java.util.*;
 
 public class FourSum {
     public static void main(String[] args){
         int arr[] = {1,0,-1,0,-2,2};
         int target = 0;
-        SelectionSort.Sort(arr);
+        Arrays.sort(arr);
         List<List<Integer>> ls = new ArrayList<>();
         for(int i = 0 ; i < arr.length-1;i++){
             if(i > 0 && arr[i] == arr[i-1]) continue;

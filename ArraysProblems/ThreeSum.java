@@ -5,7 +5,7 @@ public class ThreeSum {
         List<List<Integer>> ls = new ArrayList<>();
         int arr[]  = {-2,0,1,1,2};
         int target = 0;
-        SelectionSort.Sort(arr);
+        Arrays.sort(arr);
         for(int i = 0 ; i < arr.length; i++){
             if(i > 0 && arr[i] == arr[i-1]) continue;
             int  j = i +1;
