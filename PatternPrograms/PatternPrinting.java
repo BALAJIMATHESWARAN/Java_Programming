@@ -1,4 +1,3 @@
-
 public class PatternPrinting {
     public static void main(String[] args){
         int len = 10;
