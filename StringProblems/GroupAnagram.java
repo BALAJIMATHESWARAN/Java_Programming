@@ -41,3 +41,43 @@ public class GroupAnagram {
         }
     }
 }
+
+// import java.util.*;
+
+// class Solution {
+//     public List<List<String>> groupAnagrams(String[] strs) {
+//         Map<String, List<String>> map = new HashMap<>();
+
+//         for (String s : strs) {
+//             int[] count = new int[26];  // Assuming lowercase a-z only
+//             for (char c : s.toCharArray()) {
+//                 count[c - 'a']++;
+//             }
+
+//             // Convert count array to string key like: "1#0#0#0#1#..."
+//             StringBuilder keyBuilder = new StringBuilder();
+//             for (int num : count) {
+//                 keyBuilder.append(num).append('#'); // '#' to separate counts
+//             }
+//             String key = keyBuilder.toString();
+
+//             if (!map.containsKey(key)) {
+//                 map.put(key, new ArrayList<>());
+//             }
+//             map.get(key).add(s);
+//         }
+
+//         return new ArrayList<>(map.values());
+//     }
+
+//     public static void main(String[] args) {
+//         Solution sol = new Solution();
+//         String[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
+//         List<List<String>> result = sol.groupAnagrams(input);
+
+//         for (List<String> group : result) {
+//             System.out.println(group);
+//         }
+//     }
+// }
+
