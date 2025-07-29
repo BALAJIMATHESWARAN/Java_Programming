@@ -11,6 +11,6 @@ public class LcmAndGcd {
             }
         }
         int LCM = (a * b) / GCD;
-        System.out.println(LCM + " "+ GCD);
+        System.out.println(LCM + "  "+ GCD);
     }
 }   
