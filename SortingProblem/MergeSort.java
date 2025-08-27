@@ -8,11 +8,11 @@ public class MergeSort{
     }
 
     public static void mergeSort(int arr[] , int l , int r){
-        if( l < r){
-            int mid = l + (r-l)/2;
-            mergeSort(arr, l ,mid);
-            mergeSort(arr, mid+1, r);
-            merger(arr, l , mid, r);
+        if(l < r){
+            int mid = l + (r-l)/2 ;
+            mergeSort(arr, l ,mid) ;
+            mergeSort(arr, mid+1, r) ;
+            merger(arr, l , mid, r) ;
         }
     }
     public static void merger(int arr[] , int l , int mid, int r){
