@@ -2,10 +2,20 @@ package Dynamic_Programming.Tabulation;
 
 import java.util.Arrays;
 
-public class LCS {
+public class LPS {
+    public static String reverseStr(String str){
+        String str3 = "";
+        int len = str.length();
+        int j = len-1;
+        while(j >= 0){
+            str3 += str.charAt(j--);
+        }
+        return str3;
+    }
+
     public static void main(String[] args) {
-        String str1 = "abc";
-        String str2 = "ace";
+        String str1 = "bbbab";
+        String str2 = reverseStr(str1);
         int n = str1.length();
         int m = str2.length();
         int dp[][] = new int[n+1][m+1];
@@ -51,5 +61,4 @@ public class LCS {
         }
         System.out.println(Arrays.toString(ch));    
     }
-    
 }
