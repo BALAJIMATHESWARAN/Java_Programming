@@ -1,6 +1,6 @@
 public class LongestValidParenteses {
     public static void main(String [] args){
-        String str = "((()())())))";
+        String str = "(()";
         int len = str.length();
         int open = 0;
         int close = 0;
@@ -36,7 +36,7 @@ public class LongestValidParenteses {
                 int tot = open+close;
                 max = Math.max(max, tot);
             }
-            else if(open < close){
+            else if(open > close){
                 open = close = 0;
             }
         }
