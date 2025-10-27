@@ -41,6 +41,7 @@ public class LongestValidParenteses {
                 open = close = 0;
             }
         }
+
         System.out.println(max);
     }
 }
