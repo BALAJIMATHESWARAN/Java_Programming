@@ -13,9 +13,9 @@ public class LongestSubstringWithoutNotRepeatingCharacters {
 
         while(r < len){
             if(hash[str.charAt(r)] != -1){
-                if(hash[str.charAt(r)]  >= l){
-                    l = hash[str.charAt(r)] + 1;
-                }
+                if(hash[str.charAt(r)]  >= l){ // check it is in the current window if yes
+                    l = hash[str.charAt(r)] + 1;// update to l pointer 
+                }                               
             }
             hash[str.charAt(r)] = r;
             maxlen = Math.max(maxlen,r-l+1);

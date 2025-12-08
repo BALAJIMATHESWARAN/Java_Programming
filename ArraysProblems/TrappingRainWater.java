@@ -18,7 +18,6 @@ public class TrappingRainWater {
                     l++;
                 }
             }
-
             else{
                 if(rm < arr[r]){
                     rm = arr[r];
